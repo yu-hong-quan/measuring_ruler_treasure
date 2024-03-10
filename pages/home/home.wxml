@@ -1,0 +1,34 @@
+<image src="/images/bg.jpg" mode="" class="bg_image" />
+<scroll-view class="home" scroll-y type="list">
+    <view class="content_menu">
+
+        <!-- <picker bindchange="bindPickerChange" value="{{typeIndex}}" range="{{typeArr}}" data-type="camera"> -->
+            <view class="btn" bindtap="handleChooseMedia" data-type="camera">
+                <image src="/images/viedo.png" class="btn_img"></image>
+                <view class="within">
+                    <text class="name">拍照量尺</text>
+                    <text class="desc">CAMERA</text>
+                </view>
+            </view>
+        <!-- </picker> -->
+
+        <!-- <picker bindchange="bindPickerChange" value="{{typeIndex}}" range="{{typeArr}}" data-type="album"> -->
+            <view class="btn" bindtap="handleChooseMedia" data-type="album">
+                <image src="/images/viewImg.png" class="btn_img"></image>
+                <view class="within">
+                    <text class="name">相册选择</text>
+                    <text class="desc">ALBUM</text>
+                </view>
+            </view>
+        <!-- </picker> -->
+
+        <view class="btn customized" bind:tap="goCustomized">
+            <image src="/images/share.png" class="btn_img"></image>
+            <view class="within">
+                <text class="name">更多发现</text>
+                <text class="desc">MORE</text>
+            </view>
+            <image src="/images/more.png" class="more_img"></image>
+        </view>
+    </view>
+</scroll-view>

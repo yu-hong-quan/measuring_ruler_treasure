@@ -1,0 +1,93 @@
+page {
+    background: #B0D2D4;
+}
+
+.home {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg_image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.content_menu {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 90rpx;
+    padding: 0 32rpx;
+    box-sizing: border-box;
+}
+
+.content_menu .btn {
+    width: 300rpx;
+    height: 300rpx;
+    border-radius: 50rpx;
+    margin-top: 30rpx;
+    background-color: rgba(255, 255, 255, 0.253);
+    backdrop-filter: blur(1rpx);
+    box-shadow: 0 0 20rpx #252b33;
+    position: relative;
+    padding: 22rpx;
+    box-sizing: border-box;
+}
+
+.content_menu .btn .btn_img{
+    width: 120rpx;
+    height: 120rpx;
+    position: absolute;
+    top: 20rpx;
+    left:20rpx;
+}
+.content_menu .btn .more_img{
+    width: 80rpx;
+    height: 80rpx;
+    position: absolute;
+    bottom: 30rpx;
+    right:20rpx;
+}
+.content_menu .btn .within {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    position: absolute;
+    bottom: 20rpx;
+    right: 20rpx;
+}
+
+.content_menu .btn .within .name{
+    font-size: 42rpx;
+    font-weight: bold;
+}
+
+.content_menu .btn .within .desc{
+    font-size: 32rpx;
+}
+
+.content_menu .customized {
+    width: 650rpx;
+    background-color: rgba(26, 26, 26, 0.726);
+    box-shadow: 0 0 20rpx #293A54;
+    margin-top: 80rpx;
+}
+.content_menu .customized .within{
+    right: 120rpx;
+}

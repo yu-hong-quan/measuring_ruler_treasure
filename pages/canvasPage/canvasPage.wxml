@@ -1,0 +1,35 @@
+<view class="canvasPage" hidden="{{alertBoxVisible}}">
+  <view class="canvas_box">
+    <canvas type="2d" style="width: 640rpx;height: 1258rpx;" id="myCanvas" bindtouchstart="eventHandleStart" bind:touchend="eventHandleEnd" catch:touchmove="eventHandleMove" bind:tap="eventHandleTap"></canvas>
+  </view>
+  <view class="footer_btn_box">
+    <!-- <view class="clear" bind:tap="switchTab">切换</view> -->
+    <view class="clear" bind:tap="lining">
+      <text class="txt">点线</text>
+      <image src="/images/brack.png" mode="" class="img_icon" />
+    </view>
+    <view class="clear" bind:tap="taging">
+      <text class="txt">贴标</text>
+      <image src="/images/brack.png" mode="" class="img_icon" />
+    </view>
+    <view class="clear" bind:tap="clearCanvas">
+      <text class="txt">撤回</text>
+      <image src="/images/brack.png" mode="" class="img_icon" />
+    </view>
+    <view class="save" bind:tap="saveImage">
+      <text class="txt">保存</text>
+      <image src="/images/save.png" mode="" class="img_icon" />
+    </view>
+  </view>
+</view>
+
+<view class="alert_box" wx:if="{{alertBoxVisible}}">
+  <view class="content">
+    <text class="title">{{operationType==='line'?'输入尺寸':'请输入文本'}}</text>
+    <input type="text" value="{{chicunValue}}" class="input_box_cls" placeholder="请输入" bind:input="handleInputChange" />
+    <view class="btn_box">
+      <view class="btn canle" bind:tap="cancleAlertBox">取消</view>
+      <view class="btn confmit" bind:tap="confmitAlertBox">确认</view>
+    </view>
+  </view>
+</view>

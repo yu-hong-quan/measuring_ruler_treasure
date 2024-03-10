@@ -1,0 +1,139 @@
+page {
+  width: 100%;
+  height: auto;
+}
+
+.canvasPage {
+  width: 100%;
+  height: auto;
+  background: #B0D2D4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.canvas_box {
+  width: 640rpx;
+  height: 1258rpx;
+  display: flex;
+  flex-direction: column;
+  margin-top: 32rpx;
+}
+
+.footer_btn_box {
+  bottom: 30rpx;
+  width: 100%;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear{
+  width: 150rpx;
+  height: 70rpx;
+  background: #7183A6;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.tagline{
+  width: 150rpx;
+  height: 70rpx;
+  background: #293A54;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.save {
+  width: 150rpx;
+  height: 70rpx;
+  background: #293A54;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rpx;
+}
+.clear .img_icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 10rpx;
+}
+
+
+.save .img_icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-left: 10rpx;
+}
+.alert_box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert_box .content {
+  width: 500rpx;
+  height: 300rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32rpx 0;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 20rpx;
+}
+
+.alert_box .content .title {
+  margin-bottom: 34rpx;
+  font-size: 32rpx;
+  display: inline-block
+}
+
+.input_box_cls {
+  width: 80%;
+  height: 60rpx;
+  border: 1rpx solid #c5b6b6;
+  border-radius: 6rpx;
+  line-height: 20rpx;
+  padding-left: 20rpx;
+}
+
+.btn_box {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  border-top: 1rpx solid #ccc;
+  margin-top: 20rpx;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn_box .btn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  color: rgb(99, 98, 98);
+}
+
+.btn_box .confmit {
+  color: rgb(130, 206, 17);
+  border-left: 1rpx solid #ccc;
+}

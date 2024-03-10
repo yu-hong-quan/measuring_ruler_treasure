@@ -1,0 +1,21 @@
+{
+  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+  "projectname": "%E9%87%8F%E5%B0%BA%E5%AE%9D",
+  "setting": {
+    "compileHotReLoad": false
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "图片编辑",
+          "pathName": "pages/canvasPage/canvasPage",
+          "query": "tempFilePath=http://usr/1705309987064.png",
+          "launchMode": "default",
+          "scene": null
+        }
+      ]
+    }
+  },
+  "libVersion": "3.2.5"
+}
